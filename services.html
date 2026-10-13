@@ -141,7 +141,11 @@
     #mobile-menu{display:none}
     #mobile-menu.open{display:block}
     body{font-family:'Lato',sans-serif}
-  </style>
+  .tile{position:relative;margin:0;overflow:hidden;background:#e5e7eb}
+.tile img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.ba-label{position:absolute;top:12px;left:12px;padding:4px 12px;border-radius:4px;font-family:'Oswald',sans-serif;font-size:12px;font-weight:600;letter-spacing:2px;text-transform:uppercase}
+.lb-before{background:rgba(20,20,20,.78);color:#fff}.lb-after{background:#0D9488;color:#fff}
+</style>
 <link rel="stylesheet" href="/mobile.css">
 </head>
 <body class="bg-gray-50">
@@ -301,6 +305,29 @@
             <p class="text-gray-600 leading-relaxed mb-4">Serving Tampa Bay, Brandon, St. Pete, Seminole, and surrounding areas. Based in Seminole, Nachelle brings professional painting services to homeowners throughout the Tampa Bay area — from Hillsborough and Pinellas to Pasco, Manatee, and Sarasota Counties.</p>
             <p class="mb-5"><a href="/blog/5-signs-your-tampa-bay-home-needs-painting-before-listing" class="text-sm font-bold underline" style="color:#0D9488">5 Signs Your Home Needs Painting Before Listing &rarr;</a></p>
             <a href="/contact" class="teal-btn inline-block px-7 py-3 rounded-full font-bold uppercase tracking-wide text-sm">Get a Painting Quote</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Service: Pressure Washing -->
+      <div class="service-card rounded-2xl p-8 md:p-10 mb-10" id="pressure-washing">
+        <div class="flex items-start gap-6">
+          <div class="flex-shrink-0 w-16 h-16 rounded-full flex items-center justify-center" style="background:linear-gradient(135deg,#0D9488,#06B6D4)">
+            <i class="fas fa-water text-white text-2xl"></i>
+          </div>
+          <div class="flex-1">
+            <h2 class="font-heading font-bold text-3xl text-gray-900 mb-4">Pressure Washing</h2>
+            <p class="text-gray-600 leading-relaxed mb-4">Florida's sun, rain and humidity leave algae, rust and grime on fences, gates, walkways, driveways and the outside of the house. Pressure washing brings those surfaces back to clean and bright, before a listing photo shoot, between tenants, or ahead of exterior painting.</p>
+            <p class="text-gray-600 leading-relaxed mb-6">It is also included in the pre-listing package: exterior pressure washing of the house, sidewalks and driveway.</p>
+            <div class="grid grid-cols-2 sm:grid-cols-3 gap-2 mb-6">
+              <figure class="tile rounded-lg" style="aspect-ratio:1/1"><img src="/photos/pw-gate-before.jpg" alt="White vinyl gate with rust and algae stains before pressure washing" width="1400" height="1050" loading="lazy"><span class="ba-label lb-before">Before</span></figure>
+              <figure class="tile rounded-lg" style="aspect-ratio:1/1"><img src="/photos/pw-gate-after.jpg" alt="White vinyl gate after pressure washing" width="1050" height="1400" loading="lazy" style="object-position:center 60%"><span class="ba-label lb-after">After</span></figure>
+              <figure class="tile rounded-lg" style="aspect-ratio:1/1"><img src="/photos/pw-walkway.jpg" alt="Concrete walkway partway through pressure washing" width="1050" height="1400" loading="lazy" style="object-position:center 40%"></figure>
+              <figure class="tile rounded-lg" style="aspect-ratio:1/1"><img src="/photos/pw-fence-before.jpg" alt="Weathered grey wood fence before pressure washing" width="1400" height="1050" loading="lazy"><span class="ba-label lb-before">Before</span></figure>
+              <figure class="tile rounded-lg" style="aspect-ratio:1/1"><img src="/photos/pw-fence-mid.jpg" alt="Fence partway through pressure washing, cleaned section next to grey section" width="1400" height="1050" loading="lazy" style="object-position:60% center"><span class="ba-label lb-before">Mid-wash</span></figure>
+              <figure class="tile rounded-lg" style="aspect-ratio:1/1"><img src="/photos/pw-fence-after.jpg" alt="Wood fence after pressure washing" width="1400" height="1050" loading="lazy"><span class="ba-label lb-after">After</span></figure>
+            </div>
+            <a href="/contact" class="teal-btn inline-block px-7 py-3 rounded-full font-bold uppercase tracking-wide text-sm">Get a Pressure Washing Estimate</a>
           </div>
         </div>
       </div>
