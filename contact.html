@@ -196,27 +196,20 @@
                 <label class="form-label" for="client-type">I'm a... <span class="text-red-500">*</span></label>
                 <select class="form-input" id="client-type" name="client_type" required>
                   <option value="" disabled selected>Select one...</option>
-                  <option value="Homeowner">Homeowner</option>
-                  <option value="Home Seller">Home Seller</option>
-                  <option value="Real Estate Agent">Real Estate Agent</option>
-                  <option value="Property Manager">Property Manager</option>
+                  <option value="Business or Office Manager">Business / Office Manager</option>
                   <option value="Contractor or Builder">Contractor or Builder</option>
+                  <option value="Home Seller">Home Seller</option>
+                  <option value="Homeowner">Homeowner</option>
+                  <option value="Property Manager">Property Manager</option>
+                  <option value="Real Estate Agent">Real Estate Agent</option>
                 </select>
               </div>
               <div>
                 <label class="form-label">Service Interest <span class="text-gray-400 normal-case font-normal text-xs">(Check all that apply)</span></label>
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 mt-2">
                   <label class="checkbox-label">
-                    <input type="checkbox" name="services[]" value="Interior Painting">
-                    <span>Interior Painting</span>
-                  </label>
-                  <label class="checkbox-label">
-                    <input type="checkbox" name="services[]" value="Exterior Painting">
-                    <span>Exterior Painting</span>
-                  </label>
-                  <label class="checkbox-label">
-                    <input type="checkbox" name="services[]" value="Home Staging">
-                    <span>Home Staging</span>
+                    <input type="checkbox" name="services[]" value="Commercial Cleaning">
+                    <span>Commercial Cleaning</span>
                   </label>
                   <label class="checkbox-label">
                     <input type="checkbox" name="services[]" value="Curb Appeal">
@@ -227,16 +220,32 @@
                     <span>Custom Closets</span>
                   </label>
                   <label class="checkbox-label">
-                    <input type="checkbox" name="services[]" value="Organization & Space Planning">
-                    <span>Organization &amp; Space Planning</span>
+                    <input type="checkbox" name="services[]" value="Demolition & Tile Removal">
+                    <span>Demolition &amp; Tile Removal</span>
                   </label>
                   <label class="checkbox-label">
                     <input type="checkbox" name="services[]" value="Estate Clean-Out">
                     <span>Estate Clean-Out</span>
                   </label>
                   <label class="checkbox-label">
-                    <input type="checkbox" name="services[]" value="Demolition & Tile Removal">
-                    <span>Demolition &amp; Tile Removal</span>
+                    <input type="checkbox" name="services[]" value="Exterior Painting">
+                    <span>Exterior Painting</span>
+                  </label>
+                  <label class="checkbox-label">
+                    <input type="checkbox" name="services[]" value="Home Staging">
+                    <span>Home Staging</span>
+                  </label>
+                  <label class="checkbox-label">
+                    <input type="checkbox" name="services[]" value="Interior Painting">
+                    <span>Interior Painting</span>
+                  </label>
+                  <label class="checkbox-label">
+                    <input type="checkbox" name="services[]" value="Organization & Space Planning">
+                    <span>Organization &amp; Space Planning</span>
+                  </label>
+                  <label class="checkbox-label">
+                    <input type="checkbox" name="services[]" value="Pressure Washing">
+                    <span>Pressure Washing</span>
                   </label>
                   <label class="checkbox-label">
                     <input type="checkbox" name="services[]" value="Vendor Services for Property Management Companies">
@@ -288,14 +297,14 @@
         <div>
           <h3 class="font-heading text-white font-semibold text-lg mb-4 uppercase tracking-wider">Services</h3>
           <ul class="space-y-2 text-sm text-gray-400">
-            <li><a href="/services" class="hover:text-white transition-colors">Interior &amp; Exterior Painting</a></li>
-            <li><a href="/services" class="hover:text-white transition-colors">Staging &amp; Curb Appeal</a></li>
+            <li><a href="/services#commercial-cleaning" class="hover:text-white transition-colors">Commercial Cleaning</a></li>
             <li><a href="/services" class="hover:text-white transition-colors">Custom Closets</a></li>
-            <li><a href="/services" class="hover:text-white transition-colors">Organization &amp; Space Planning</a></li>
-            <li><a href="/services" class="hover:text-white transition-colors">Estate Clean-Outs</a></li>
-
             <li><a href="/services" class="hover:text-white transition-colors">Demolition &amp; Tile Removal</a></li>
-            <li><a href="/services" class="hover:text-white transition-colors">Pressure Washing</a></li>
+            <li><a href="/services" class="hover:text-white transition-colors">Estate Clean-Outs</a></li>
+            <li><a href="/services" class="hover:text-white transition-colors">Interior &amp; Exterior Painting</a></li>
+            <li><a href="/services" class="hover:text-white transition-colors">Organization &amp; Space Planning</a></li>
+            <li><a href="/services#pressure-washing" class="hover:text-white transition-colors">Pressure Washing</a></li>
+            <li><a href="/services" class="hover:text-white transition-colors">Staging &amp; Curb Appeal</a></li>
             <li><a href="/services" class="hover:text-white transition-colors">Vendor Services for Property Management Companies</a></li>
           </ul>
         </div>
