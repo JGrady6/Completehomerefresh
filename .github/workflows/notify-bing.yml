@@ -1,0 +1,16 @@
+name: Notify Bing of changed pages
+on:
+  push:
+    branches: [main]
+    paths: ['**.html', 'sitemap.xml']
+jobs:
+  indexnow:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with: { fetch-depth: 2 }
+      - name: Wait for the site to deploy
+        run: sleep 120
+      - uses: actions/setup-node@v4
+        with: { node-version: 20 }
+      - run: node scripts/notify-bing.mjs
